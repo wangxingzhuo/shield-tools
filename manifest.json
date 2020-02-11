@@ -28,7 +28,8 @@
     "contextMenus",
     "http://*/*",
     "https://*/*",
-    "tabs"
+    "tabs",
+    "webRequest"
   ],
   "web_accessible_resources": [
     "Images/*.png",
