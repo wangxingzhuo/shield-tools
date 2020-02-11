@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "S.H.I.E.L.D. Tools",
+  "name": "Address Tools",
   "version": "1.0",
   "description": "显IP，生成二维码",
   "icons": {
@@ -8,43 +8,27 @@
     "48": "Images/48.png",
     "128": "Images/128.png"
   },
-  "default_locale": "zh",
+  "default_locale": "zh_CN",
   "background": {
     "page": "back.html",
     "persistent": true
   },
-  "options_page": "options.html",
   "browser_action": {
-    "default_title": "S.H.I.E.L.D Tools",
-    "default_popup": "popup.html",
+    "default_title": "Address Tools",
     "default_icon": "Images/16.png",
     "name": "browser_action_name"
   },
-  /*
-  "content_scripts": [{
-    "run_at": "document_end",
-    "matches": ["<all_urls>"],
-    "js": [
-      "/libs/setIP.js"
-    ]}
-  ],
-  */
   "omnibox": {
-    "keyword": "shield",
+    "keyword": "Address",
     "icons": "Images/16.png"
   },
-
   "permissions": [
     "activeTab",
     "browsingData",
     "contextMenus",
     "http://*/*",
     "https://*/*",
-    "notifications",
-    "storage",
-    "tabs",
-    "webRequest",
-    "webRequestBlocking"
+    "tabs"
   ],
   "web_accessible_resources": [
     "Images/*.png",
